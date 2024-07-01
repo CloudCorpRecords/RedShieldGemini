@@ -15,38 +15,27 @@ This repository contains the frontend for the Red Team AI Code Generator. The fr
 
 ## Setup
 
+### Deploy on Replit
+
 1. **Fork the repository:**
 
     Click on the "Fork" button at the top right corner of this repository's page to create a copy of this repository under your account.
 
-2. **Clone the repository:**
+2. **Open the project:**
 
-    ```bash
-    git clone https://github.com/your-username/red-team-ai-code-generator-frontend.git
-    cd red-team-ai-code-generator-frontend
-    ```
+    Open the project in Replit by navigating to your Replit dashboard, clicking on the "Create Repl" button, and selecting "Import from GitHub". Paste the URL of your forked repository.
 
-3. **Open the project:**
+3. **Update Backend URL:**
 
-    Open the project in your preferred code editor.
-
-4. **Update Backend URL:**
-
-    Edit the `script.js` file to update the backend URL if necessary:
+    Edit the `script.js` file to update the backend URL:
 
     ```javascript
     const backendUrl = 'https://your-backend-url.replit.app/generate';
     ```
 
-5. **Run the frontend:**
+4. **Run the frontend:**
 
-    You can use a local server to run the frontend. For example, using Python's built-in HTTP server:
-
-    ```bash
-    python -m http.server
-    ```
-
-    Open your web browser and navigate to `http://localhost:8000` to view the application.
+    Click the "Run" button in Replit to start the frontend. Replit will provide a URL where you can access the running application.
 
 ## Usage
 
@@ -85,9 +74,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgements
 
-- [Replit](https://replit.com/) for providing a platform to host the backend
+- [Replit](https://replit.com/) for providing a platform to host the frontend and backend
 - [Google Cloud](https://cloud.google.com/) for the Gemini API
 
 ## Contact
 
-For questions or support, please open an issue in this repository or contact the project maintainer at your.email@example.com.
+For questions or support, please open an issue in this repository or contact the project maintainer at admin@reneturcios.com
