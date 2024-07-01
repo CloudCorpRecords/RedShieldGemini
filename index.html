@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Team AI Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Red Team AI Code Generator</h1>
+        <form id="codeForm">
+            <label for="url">Target URL:</label>
+            <input type="text" id="url" name="url" required />
+
+            <label for="vulnerability">Vulnerability:</label>
+            <select id="vulnerability" name="vulnerability">
+                <option value="XSS">Cross-Site Scripting (XSS)</option>
+                <option value="SQL Injection">SQL Injection</option>
+                <option value="CSRF">Cross-Site Request Forgery (CSRF)</option>
+                <!-- Add more vulnerabilities as needed -->
+            </select>
+
+            <button type="submit">Generate Code</button>
+        </form>
+        <div id="result">
+            <h2>Attack Result:</h2>
+            <pre id="generatedCode">No output</pre>
+        </div>
+        <div id="threatLevelContainer">
+            <h2>Threat Level:</h2>
+            <pre id="threatLevel">N/A</pre>
+        </div>
+        <div id="detailedAnalysisContainer">
+            <h2>Detailed Analysis:</h2>
+            <pre id="detailedAnalysis">No content to analyze</pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
